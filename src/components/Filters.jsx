@@ -29,9 +29,10 @@ export const Filters = () => {
     searchQuery !== '';
   
   return (
-    <div className="bg-white border-b border-gray-200 py-4 shadow-sm">
+    <div className="py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {/* Search */}
           <div className="lg:col-span-2 relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
@@ -121,6 +122,7 @@ export const Filters = () => {
               Clear Filters
             </button>
           )}
+        </div>
         </div>
       </div>
     </div>
